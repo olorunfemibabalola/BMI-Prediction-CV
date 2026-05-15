@@ -482,7 +482,7 @@
         "!chmod 600 /root/.config/kaggle/kaggle.json\n",
         "\n"
       ],
-      "execution_count": 23,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -519,7 +519,7 @@
         "!kaggle competitions download -c bucv26 --force\n",
         "!unzip -o *.zip"
       ],
-      "execution_count": 24,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1742,7 +1742,7 @@
       "source": [
         "!ls /content/"
       ],
-      "execution_count": 25,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1794,7 +1794,7 @@
         "df = pd.read_csv('train_labels.csv')\n",
         "df.head(5)"
       ],
-      "execution_count": 26,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1976,7 +1976,7 @@
       "metadata": {
         "id": "rP7r-nHS4cxH"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -2040,7 +2040,7 @@
       "metadata": {
         "id": "2pRBsr26jkJ5"
       },
-      "execution_count": 28,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -2065,7 +2065,7 @@
         },
         "outputId": "0df308f5-dee9-4e38-8748-b2e61cff3b40"
       },
-      "execution_count": 29,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2103,7 +2103,7 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 105,
+          "height": 85,
           "referenced_widgets": [
             "d219800ab6ea43f0b68d12069439d2c4",
             "bd8e6129d9ea462db1f54f0338163249",
@@ -2172,7 +2172,7 @@
         "\n",
         "print(\"Datasets and DataLoaders re-initialized with proper normalization values.\")"
       ],
-      "execution_count": 30,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -2223,7 +2223,7 @@
         },
         "outputId": "502d425b-41d7-4b6a-c175-f5152e4d52c7"
       },
-      "execution_count": 31,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2264,7 +2264,7 @@
         },
         "outputId": "36f1e060-c3b8-4f5b-f8ce-8a7521150aca"
       },
-      "execution_count": 32,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2302,7 +2302,7 @@
         },
         "outputId": "f15e8980-78d3-4a8a-d40a-26ae0d024f54"
       },
-      "execution_count": 33,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2381,7 +2381,7 @@
         },
         "outputId": "bc117f5d-2b34-4ae7-82aa-2852ffe67c9d"
       },
-      "execution_count": 34,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2490,7 +2490,7 @@
         "print(model)\n",
         "print(\"Model re-instantiated with Dropout layers.\")"
       ],
-      "execution_count": 35,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -2648,7 +2648,7 @@
         "print(model)\n",
         "print(\"Model re-instantiated with ResNet-like architecture.\")"
       ],
-      "execution_count": 46,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -2893,7 +2893,7 @@
         "\n",
         "print(\"Model, optimizer, scheduler, and early stopping variables re-initialized.\")"
       ],
-      "execution_count": 47,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -2920,7 +2920,7 @@
       "metadata": {
         "id": "0Tt4UIey1wo2"
       },
-      "execution_count": 36,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -2955,7 +2955,7 @@
         "\n",
         "print(\"Learning rate scheduler initialized.\")"
       ],
-      "execution_count": 37,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -3010,7 +3010,7 @@
       "metadata": {
         "id": "kP1dKQCO8Xii"
       },
-      "execution_count": 38,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -3039,7 +3039,7 @@
         "outputId": "481a70b5-1e27-4e90-b102-481bd52b4578",
         "collapsed": true
       },
-      "execution_count": 39,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -3210,7 +3210,7 @@
         "    model.load_state_dict(best_model_state)\n",
         "    print('Loaded best model weights based on validation loss.')\n"
       ],
-      "execution_count": 48,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -3561,7 +3561,7 @@
         },
         "outputId": "e7b4e715-7fc3-44b2-8f64-0dfecd9354c8"
       },
-      "execution_count": 50,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -3615,9 +3615,13 @@
       },
       "source": [
         "!kaggle competitions submit -c bucv26 -f submission.csv -m 'ResNetCNN with normalization, dropout, and learning rate scheduling'\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
         "\n"
       ],
-      "execution_count": 52,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
